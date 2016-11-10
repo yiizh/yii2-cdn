@@ -1,4 +1,9 @@
 # yii2-cdn
+
+[![Packagist](https://img.shields.io/packagist/dt/yiizh/yii2-cdn.svg)](https://packagist.org/packages/yiizh/yii2-cdn)
+[![Packagist](https://img.shields.io/packagist/v/yiizh/yii2-cdn.svg)](https://packagist.org/packages/yiizh/yii2-cdn)
+[![GitHub tag](https://img.shields.io/github/tag/yiizh/yii2-cdn.svg)](https://github.com/yiizh/yii2-cdn)
+
 A CDN extension for Yii2.
 
 You can make your assets using CDN resources without changing your asset bundle code.
