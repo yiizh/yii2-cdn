@@ -29,21 +29,33 @@ Add the following code to you config file `@app/config/main.php`:
 ```php
 // ...
 'components' => [
-    'cdn' => 'yiizh\cdn\CDN',
-    'asssets' => [
-        [
-            'class' => 'yii\web\JqueryAsset',
-            'js' => [
-                'http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js'
-            ]
-        ],
-        [
-            'class' => 'yii\bootstrap\BootstrapAsset',
-            'js' => [
-                'http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css'
-            ]
-        ],
-    ]
+    'cdn' => [
+        'class' => 'yiizh\cdn\CDN',
+        'assets' => [
+            [
+                'class' => 'yii\web\JqueryAsset',
+                'js' => [
+                    'http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js'
+                ]
+            ],
+            [
+                'class' => 'yii\bootstrap\BootstrapAsset',
+                'css' => [
+                    'http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css'
+                ]
+            ],
+        ]
+    ],
 ]
-...
+// ...
+```
+
+### 2. Add `cdn` to bootstrap
+
+Add the following code to you config file `@app/config/main.php`:
+
+```php
+// ...
+'bootstrap' => ['log', 'cdn'],
+// ...
 ```
