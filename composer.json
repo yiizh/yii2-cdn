@@ -1,0 +1,32 @@
+{
+    "name": "yiizh/yii2-cdn",
+    "description": "A CDN extension for Yii2.",
+    "keywords": ["yii2", "cdn", "assets", "extension"],
+    "homepage": "https://github.com/yiizh/yii2-cdn",
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "support":{
+        "email": "zhangdi_me@163.com",
+        "issues" : "https://github.com/yiizh/yii2-cdn/issues"
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "~2.0.3"
+    },
+    "authors": [
+        {
+            "name": "Di Zhang",
+            "email": "zhangdi_me@163.com",
+            "role": "Lead Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "config": {
+        "process-timeout": 1800
+    },
+    "autoload": {
+        "psr-4": {
+            "yiizh\\cdn\\": "src/"
+        }
+    }
+}
